@@ -1,0 +1,19 @@
+{
+  "_comment": "Опционально. Для базовой работы системы MCP не нужен. Если хочешь подключить Firecrawl (веб-скрапинг для research-scout) или AssemblyAI (транскрипция видео/аудио) — скопируй этот файл в .mcp.json и впиши ключи.",
+  "mcpServers": {
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": ""
+      }
+    },
+    "assemblyai": {
+      "command": "npx",
+      "args": ["-y", "assembly-ai-mcp@latest"],
+      "env": {
+        "ASSEMBLYAI_API_KEY": ""
+      }
+    }
+  }
+}

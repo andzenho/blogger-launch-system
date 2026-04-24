@@ -1,0 +1,35 @@
+# === Секреты ===
+.mcp.json
+.env
+.env.*
+*.pem
+*.key
+
+# === Claude Code — локальные кеши и сессии ===
+session_data/
+.claude/settings.local.json
+.claude/plans/
+
+# === Клиентские проекты ===
+# По умолчанию папка projects/ НЕ коммитится в публичный репо — там живут реальные проекты блогеров.
+# Если хочешь хранить их в этом же (приватном) репо — закомментируй строку ниже.
+projects/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Editor ===
+.vscode/
+.idea/
+*.swp
+
+# === Node (если клонируем MCP-серверы локально) ===
+node_modules/
+*.log
+
+# === Python (venv'ы, pyc) ===
+__pycache__/
+*.pyc
+.venv/
+venv/
